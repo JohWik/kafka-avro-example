@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example.kafka.avro</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>kafka-avro-example</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>kafka-avro-example</name>
 	<description>Kafka/Avro Spring Boot Example</description>
