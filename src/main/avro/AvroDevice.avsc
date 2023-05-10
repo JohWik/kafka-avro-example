@@ -1,0 +1,36 @@
+{
+  "namespace": "com.example.avro.schema",
+  "type": "record",
+  "name": "AvroDevice",
+  "fields": [
+    {
+      "name": "deviceUuid",
+      "type": {"type": "string", "logicalType": "uuid"}
+    },
+    {
+      "name": "events",
+      "type" : {
+        "type" : "array",
+        "items" :
+        {
+          "type" : "record",
+          "name" : "AvroEvent",
+          "fields" : [
+          {
+            "name" : "eventUuid",
+            "type": {"type": "string", "logicalType": "uuid"}
+          },
+          {
+            "name" : "timestamp",
+            "type": {"type": "long", "logicalType": "timestamp-millis"}
+          },
+          {
+            "name" : "value",
+            "type" : "string"
+          }]
+        }
+      },
+      "default" : [ ]
+    }
+  ]
+}
