@@ -1,4 +1,4 @@
-package com.example.kafka.avro;
+package com.example.kafka.avro.integration;
 
 import com.example.avro.schema.AvroDevice;
 import org.apache.kafka.clients.consumer.ConsumerRecord;

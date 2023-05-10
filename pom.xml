@@ -42,12 +42,15 @@
 			<artifactId>avro</artifactId>
 			<version>1.11.1</version>
 		</dependency>
-		<dependency>
-			<groupId>joda-time</groupId>
-			<artifactId>joda-time</artifactId>
-			<version>2.10.13</version>
-		</dependency>
 		<!-- Kafka/Avro - END -->
+
+		<!-- Swagger - START -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.0.2</version>
+		</dependency>
+		<!-- Swagger - END -->
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>

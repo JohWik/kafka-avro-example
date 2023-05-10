@@ -2,6 +2,8 @@ package com.example.kafka.avro;
 
 import com.example.avro.schema.AvroDevice;
 import com.example.avro.schema.AvroEvent;
+import com.example.kafka.avro.integration.KafkaConsumer;
+import com.example.kafka.avro.integration.KafkaProducer;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -50,7 +52,7 @@ class EmbeddedKafkaIntegrationTest {
                         .setTimestamp(Instant.now())
                         .setValue("23.093").build()))
                 .build();
-        kafkaProducer.send(topic, a);
+        kafkaProducer.send(a);
 
         boolean messageConsumed = kafkaConsumer.getLatch()
                 .await(10, TimeUnit.SECONDS);
